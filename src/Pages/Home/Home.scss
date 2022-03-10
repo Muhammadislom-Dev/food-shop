@@ -1,0 +1,14 @@
+.home{
+    width: 100%;
+    display: flex;
+
+    &__left{
+        width: 100%;
+    }
+
+    &__right{
+        width: 580px;
+        background-color: #1F1D2B;
+        height: 100vh;
+    }
+}

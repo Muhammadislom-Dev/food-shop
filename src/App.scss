@@ -1,0 +1,16 @@
+.App{
+    display: flex;
+
+    &__content{
+        width: 100%;
+    }
+}
+
+body{
+    background-color: #252736;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #fff;
+}
+
+@import './assets/scss/normalize.scss'
