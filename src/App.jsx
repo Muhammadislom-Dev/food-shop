@@ -16,19 +16,19 @@ function App() {
             <Route path="/" >
                <Home />  
             </Route>
-            <Route path="/discount" exact>
+            <Route path="/discount" exact  >
              /discount
             </Route>
-            <Route path="/notification" exact>
+            <Route path="/notification" exact >
                /notification
             </Route>
-            <Route path="/graph" exact>
+            <Route path="/graph"exact >
                /graph 
             </Route>
-            <Route path="/order" exact>
+            <Route path="/order"exact >
                /order 
             </Route>
-            <Route path="/settings" exact>
+            <Route path="/settings" exact >
                /settings
             </Route>
          </Switch>

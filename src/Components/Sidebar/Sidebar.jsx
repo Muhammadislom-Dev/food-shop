@@ -18,14 +18,14 @@ const Sidebar =() =>{
              <ul className='sidebar__list'>
                  <li className='sidebar__item'>
                     <Link className='sidebar__link'
-                     onClick={handleAddClass} to="/" > 
+                     onClick={handleAddClass} to="/"> 
                         <span className='sidebar__link-item '>
                         <img src={Home} alt="" className="sidebar__pic" /></span> 
                     </Link>
                  </li>
                  <li className='sidebar__item'>
                     <Link className='sidebar__link'  
-                    onClick={handleAddClass}  to="/discount"> 
+                    onClick={handleAddClass}  to="/discount"  > 
                         <span className='sidebar__link-item '>
                         <img src={Home} alt="" className="sidebar__pic" /></span> 
                     </Link>

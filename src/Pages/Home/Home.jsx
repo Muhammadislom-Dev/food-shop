@@ -24,10 +24,10 @@ const Home =() =>{
                 </div>
                   <Switch>
                       
-                      <Route path="/:dishtype">
-                          <HomeContent />
+                      <Route path="/:dishtype" >
+                          <HomeContent  />
                       </Route>
-                      <Route path="/">
+                      <Route path="/" >
                           <HomeContent />
                       </Route>
                   </Switch>

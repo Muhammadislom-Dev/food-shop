@@ -19,22 +19,22 @@ const HomeTop =() =>{
            <div>
                <ul className='nested-links'>
                    <li className='nested-link__item'>
-                       <NavLink className='nested-links__link'  activeClassName='nested-links__link-active' to="/" exact>Hot Dishes</NavLink>
+                       <NavLink className='nested-links__link'  activeClassName='nested-links__link-active' exact to="/" >Hot Dishes</NavLink>
                    </li>
                    <li className='nested-link__item'>
-                       <NavLink className='nested-links__link' activeClassName='nested-links__link-active' to="/cold">Cold Dishes</NavLink>
+                       <NavLink className='nested-links__link' activeClassName='nested-links__link-active'  to="/cold">Cold Dishes</NavLink>
                    </li>
                    <li className='nested-link__item'>
-                       <NavLink className='nested-links__link' activeClassName='nested-links__link-active' to="/soup">Soup</NavLink>
+                       <NavLink className='nested-links__link' activeClassName='nested-links__link-active'  to="/soup">Soup</NavLink>
                    </li>
                    <li className='nested-link__item'>
-                       <NavLink className='nested-links__link' activeClassName='nested-links__link-active' to="/grill">Grill</NavLink>
+                       <NavLink className='nested-links__link' activeClassName='nested-links__link-active'  to="/grill">Grill</NavLink>
                    </li>
                    <li className='nested-link__item'>
-                       <NavLink className='nested-links__link' activeClassName='nested-links__link-active' to="/appetizer">Appetizer</NavLink>
+                       <NavLink className='nested-links__link' activeClassName='nested-links__link-active'  to="/appetizer">Appetizer</NavLink>
                    </li>
                    <li className='nested-link__item'>
-                       <NavLink className='nested-links__link' activeClassName='nested-links__link-active' to="/dessert">Dessert</NavLink>
+                       <NavLink className='nested-links__link' activeClassName='nested-links__link-active'  to="/dessert">Dessert</NavLink>
                    </li>
                </ul>
            </div>
