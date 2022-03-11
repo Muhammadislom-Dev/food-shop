@@ -14,6 +14,7 @@
         margin-bottom: 4px;
         font-weight: 600;
         font-size: 28px;
+        line-height: 30px;
         line-height: 140%;
     }
     &__date{
@@ -70,7 +71,7 @@
 
         &::before{
         display: none;    
-        top: 97%;    
+        top: 96%;    
         position: absolute;
         z-index: 1;
         content: "";
