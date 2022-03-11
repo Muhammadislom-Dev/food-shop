@@ -19,37 +19,43 @@ const Sidebar =() =>{
                  <li className='sidebar__item'>
                     <Link className='sidebar__link'
                      onClick={handleAddClass} to="/" > 
-                      <span className='sidebar__link-item '><img src={Home} alt="" className="sidebar__pic" /></span> 
+                        <span className='sidebar__link-item '>
+                        <img src={Home} alt="" className="sidebar__pic" /></span> 
+                    </Link>
+                 </li>
+                 <li className='sidebar__item'>
+                    <Link className='sidebar__link'  
+                    onClick={handleAddClass}  to="/discount"> 
+                        <span className='sidebar__link-item '>
+                        <img src={Home} alt="" className="sidebar__pic" /></span> 
                     </Link>
                  </li>
                  <li className='sidebar__item'>
                     <Link className='sidebar__link' 
-                    onClick={handleAddClass} to="/discount" exact> 
-                      <span className='sidebar__link-item '><img src={Home} alt="" className="sidebar__pic" /></span> 
+                    onClick={handleAddClass} to="/notification" > 
+                        <span className='sidebar__link-item'>
+                        <img src={Home} alt="" className="sidebar__pic" /></span> 
+                    </Link>
+                 </li>
+                 <li className='sidebar__item'>
+                    <Link  className='sidebar__link' 
+                    onClick={handleAddClass} to="/graph"> 
+                        <span className='sidebar__link-item'>
+                        <img src={Home} alt="" className="sidebar__pic" /></span> 
+                    </Link >
+                 </li>
+                 <li className='sidebar__item'>
+                    <Link className='sidebar__link' 
+                    onClick={handleAddClass} to="/order" > 
+                        <span className='sidebar__link-item'>
+                        <img src={Home} alt="" className="sidebar__pic" /></span> 
                     </Link>
                  </li>
                  <li className='sidebar__item'>
                     <Link className='sidebar__link' 
-                    onClick={handleAddClass} to="/notification" exact> 
-                      <span className='sidebar__link-item'><img src={Home} alt="" className="sidebar__pic" /></span> 
-                    </Link>
-                 </li>
-                 <li className='sidebar__item'>
-                    <Link className='sidebar__link' 
-                    onClick={handleAddClass} to="/graph" exact> 
-                      <span className='sidebar__link-item'><img src={Home} alt="" className="sidebar__pic" /></span> 
-                    </Link>
-                 </li>
-                 <li className='sidebar__item'>
-                    <Link className='sidebar__link' 
-                    onClick={handleAddClass} to="/order" exact> 
-                      <span className='sidebar__link-item'><img src={Home} alt="" className="sidebar__pic" /></span> 
-                    </Link>
-                 </li>
-                 <li className='sidebar__item'>
-                    <Link className='sidebar__link' 
-                    onClick={handleAddClass} to="/settings" exact> 
-                      <span className='sidebar__link-item'><img src={Home} alt="" className="sidebar__pic" /></span> 
+                    onClick={handleAddClass} to="/settings" > 
+                        <span className='sidebar__link-item'>
+                        <img src={Home} alt="" className="sidebar__pic" /></span> 
                     </Link>
                  </li>
              </ul>
