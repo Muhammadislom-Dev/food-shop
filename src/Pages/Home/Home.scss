@@ -13,8 +13,8 @@
 
         &-title{
             font-weight: 600;
-            font-size: 20px;
-            line-height: 140%;
+            font-size: 22px;
+            line-height: 150%;
             padding: 5px 24px;
         }
 
@@ -25,7 +25,7 @@
 
         &-pages{
             width: 85px;
-            height: 34px;
+            height: 36px;
             background-color: #EA7C69;
             border-radius: 8px;
             text-align: center;
@@ -34,7 +34,7 @@
 
         &-top{
             width: 85px;
-            height: 34px;
+            height: 36px;
             border: 1px solid #393C49;
             background: #1F1D2B;
             border-radius: 8px;
@@ -45,8 +45,8 @@
         &-links{
             text-decoration: none;
             font-weight: 600;
-            font-size: 16px;
-            line-height: 140%;
+            font-size: 17px;
+            line-height: 22px;
             color: #EA7C69;
         }
 
@@ -83,7 +83,7 @@
             &::placeholder{
                 font-weight: 400;
                 font-size: 14px;
-                line-height: 140%;
+                line-height: 18px;
             }
         }
 
@@ -105,6 +105,7 @@
             background: #2D303E;
             border: 1px solid #393C49;
             font-size: 16px;
+            line-height:18px;
             border-radius: 5px; 
             color: #fff;
         }
