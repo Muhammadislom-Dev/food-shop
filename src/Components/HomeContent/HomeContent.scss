@@ -5,29 +5,46 @@
 
     &__list{
         margin: 0;
-        padding: 0;
         display: flex;
-        flex-wrap: wrap;
         list-style: none;
+    }
+
+    img{
+      border-radius: 50%;
+      margin-top: -55px;
+      animation: rotation 10s linear infinite;
+      object-fit: cover;
+    }
+
+
+    
+
+    &__item{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin: 15px;
+      text-align: center;
     }
 }
 
 /* width */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
   }
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background:  #1F1D2B;
   }
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #888;
+    background: #EA7C69;
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: #d15c47;
   }
+

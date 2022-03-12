@@ -7,9 +7,132 @@
     }
 
     &__right{
-        width: 580px;
+        width: 540px;
         background-color: #1F1D2B;
         height: 100vh;
+
+        &-title{
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 140%;
+            padding: 5px 24px;
+        }
+
+        &-box{
+            padding: 5px 24px;
+            display: flex;
+        }
+
+        &-pages{
+            width: 85px;
+            height: 34px;
+            background-color: #EA7C69;
+            border-radius: 8px;
+            text-align: center;
+            margin: 0px 8px;
+        }
+
+        &-top{
+            width: 85px;
+            height: 34px;
+            border: 1px solid #393C49;
+            background: #1F1D2B;
+            border-radius: 8px;
+            text-align: center;
+            margin: 0px 8px;
+        }
+
+        &-links{
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 140%;
+            color: #EA7C69;
+        }
+
+        &-link{
+            text-decoration: none;
+            color: #fff;
+        }
+
+        &-page{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-left: -10px;
+        }
+
+       &-list{
+           list-style: none;
+           margin-left: -30px;
+       } 
+
+
+
+        &-input{
+            width: 280px;
+            height: 40px;
+            margin: 10px 20px 0px 15px;
+            background: #2D303E;
+            border: 1px solid #393C49;
+            box-sizing: border-box;
+            border-radius: 8px;
+            outline: none;
+            color: #fff;
+
+            &::placeholder{
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 140%;
+            }
+        }
+
+        &-btn{
+            width: 50px;
+            height: 50px;
+            background: none;
+            border: none;
+            border: 1px solid #FF7CA3;
+            background: #1F1D2B;
+            border-radius: 8px;
+            
+        }
+
+        &-numbers{
+            width: 40px;
+            height: 30px;
+            text-align: center;
+            background: #2D303E;
+            border: 1px solid #393C49;
+            font-size: 16px;
+            border-radius: 5px; 
+            color: #fff;
+        }
+
+        &-strong{
+            font-size: 14px;
+            line-height: 140%;
+            font-weight: 400;
+        }
+
+        &-sublime{
+            display: flex;
+            justify-content: space-between;
+            padding: 5px 24px;
+            align-items: center;
+        }
+
+        &-sublimes{
+            display: flex;
+            justify-content: space-between;
+            width: 100px;
+            margin: 5px;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 140%;
+        }
+
+       
     }
 
     &__middle{

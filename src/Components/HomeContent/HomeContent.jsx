@@ -14,7 +14,8 @@ const HomeContent = () =>{
     return (
     <div className='home-content'>
         <ul className='home-content__list'>
-           {foods.
+          <li className='home-content__item'>
+          {foods.
            filter((food) => {
                if(dishtype){
                 return food.type === dishtype
@@ -46,6 +47,7 @@ const HomeContent = () =>{
             }}   
             />
            ))}
+          </li>
         </ul>
        
     </div>
