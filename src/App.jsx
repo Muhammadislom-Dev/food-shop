@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router';
 
 //Pages
 import Home from './Pages/Home/Home';
+import Notification from './Pages/Notification/Notification';
 
 //Component
 import Sidebar from './Components/Sidebar/Sidebar';
@@ -17,7 +18,7 @@ function App() {
              /discount
             </Route>
             <Route path="/notification" exact >
-               /notification
+               <Notification />
             </Route>
             <Route path="/graph"exact >
                /graph 

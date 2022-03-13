@@ -1,15 +1,27 @@
 import './Home.scss'
+import { useState } from 'react';
 import {Switch, Route } from 'react-router-dom';
 import { useContext } from 'react';
 import { Context } from '../../context/orderFoods';
-
 import HomeTop from '../../Components/HomeTop/HomeTop'
 import HomeContent from '../../Components/HomeContent/HomeContent'
 
-import Delete from '../../assets/img/delete.jpg'
+// Images
+import Delete from '../../assets/img/Button.png'
+import Card from '../../assets/img/Card.png'
+import Paypal from '../../assets/img/Paypal.png'
+import Wallet from '../../assets/img/Wallet.png'
 
 
 const Home =() =>{
+
+    const [modal, setModal] = useState(false)
+
+    const openModal = (e) =>{
+        e.preventDefault()
+        setModal(!modal)
+    }
+
     const {orderFoods, setOrderFoods} = useContext(Context)
     return(
         <div className='home'>
@@ -77,8 +89,86 @@ const Home =() =>{
                     ))}
                 </ul>
                )}
+
+                <div className="home__right-payme">
+                    <button className='home__right-card'  onClick={openModal}>Continue to Payment</button>
+                </div>
+
+              
+                <dialog open={modal} className='home__right-section'>
+                    <h2 className="home__right-names">Payment</h2>
+                    <p className="home__right-texts">3 payment method available</p>
+
+                    <hr className='home__right-hr' />
+                    
+                    <h2 className="section__name">Payment Method</h2>
+                    <div className="section__page">
+                        <div className="section__payme">
+                            <label for="inp1" className='section-label'>
+                                <img src={Card} alt="" className="section__pic" />
+                               <p className='section-span'>Credit Card</p>
+                            </label>
+
+                        </div>
+                        <div className="section__payme">
+                            <label for="inp1" className='section-label'>
+                                <img src={Paypal} alt="" className="section__pic" />
+                               <p className='section-span'>Paypal</p>
+                            </label>
+                        </div>
+                        <div className="section__payme">
+                            <label for="inp1" className='section-label'>
+                               <img src={Wallet} alt="" className="section__pic" />
+                               <p className='section-span'>Cash</p>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div className="section-inp">
+                        <p className='section-inp-name' for="name">Cardholder Name</p>
+                        <input className='section-input' type="name" id='name' />
+                    </div>
+                    <div className="section-inp">
+                        <p className='section-inp-name' for="name">Card Number</p>
+                        <input className='section-input' type="number" id='number' />
+                    </div>
+
+                    <div className="section__page">
+                        <div className="section-cards">
+                            <p  className='section-inp-name' for="number">Expiration Date</p>
+                            <input className='section-inputs' type="number" id='number' />
+                        </div>
+                        <div className="section-cards">
+                            <p  className='section-inp-name' for="password">CVV</p>
+                            <input className='section-inputs' type="password" id='password' />
+                        </div>
+                    </div>
+
+                    <div className="section__top">
+                        <div className='section-home'>
+                        <p className='section-inp-name'>Order Type</p>
+                        <div className='section-sel'>
+                        <select className='section-select' >
+                            <option>To Go</option>
+                            <option>Delivery</option>
+                        </select>
+                        </div>
+                        </div>
+                        <div className="section-cards">
+                            <p  className='section-inp-name' for="number">Table no.</p>
+                            <input className='section-inputs' type="number" id='number' />
+                        </div>
+                    </div>
+
+                   <div className="section__tops">
+                   <button className="section__btn" onClick ={() => setModal(!modal)}>
+                        Cancel
+                    </button>
+                    <button  className='section__button'>Confirm payment</button>
+                   </div>
+                </dialog>
             </div>
         </div>
     )
 }
-export default Home
+export default Home;
