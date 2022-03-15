@@ -1,6 +1,7 @@
 import './Notification.scss'
 
 import BoxTop from '../../Components/BoxTop/BoxTop';
+import SublimeRight from '../../Components/SublimeRight/SublimeRight';
 
 const Notification = () =>{
     return(
@@ -9,7 +10,7 @@ const Notification = () =>{
                 <BoxTop />
             </div>
             <div className='notification__right'>
-                <h1>Hello world</h1>
+                <SublimeRight />
             </div>
         </div>
     )

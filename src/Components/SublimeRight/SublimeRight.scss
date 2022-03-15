@@ -1,0 +1,87 @@
+.sublime{
+
+   &-img{
+       width: 55px;
+       height: 55px;
+       border-radius: 50%;
+   }
+
+   &__page{
+       display: flex;
+       align-items: center;
+       width: 320px;
+       justify-content: space-between;
+       margin: 10px 24px;
+   }
+
+   &-names{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    color: #E0E6E9;
+    margin: 4px 0;
+    // height: 0;
+
+   }
+   &-text{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+    color: #ABBBC2;
+    // height: 0;
+    margin: 4px 0;
+   }
+
+   &-box{
+       border-radius: 8px;
+       background: #1F1D2B;
+       width: 360px;
+       height: 390px;
+   }
+
+   &-btn{
+       font-size: 14px;
+       line-height: 140%;
+       font-weight: 600;
+       color: #EA7C69;
+       width: 320px;
+       height: 40px;
+       background-color: #1F1D2B;
+       outline: none;
+       border-radius: 8px;
+       border: 1px solid #EA7C69;
+   }
+
+   &-btn:hover{
+       background-color:  #EA7C69;
+       color: #fff;
+       transition: 0.5s;
+   }
+   &-button{
+    margin: 24px 0;
+    text-align: center;
+    margin-top: 20px;
+   }
+
+   &-list{
+       display: flex;
+       align-items: center;
+       margin: 15px;
+   }
+   &-item{
+       margin-left: 10px;
+   }
+   &-select{
+       text-align: center;
+       outline: none;
+       border: 1px solid #393C49;
+        box-sizing: border-box;
+        border-radius: 8px;
+        background: #1F1D2B;
+        width: 95px;
+        height: 45px;
+        color: #fff;
+        font-size: 14px;
+   }
+  
+}
