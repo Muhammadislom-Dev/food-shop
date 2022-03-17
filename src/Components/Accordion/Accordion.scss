@@ -1,8 +1,98 @@
 .accordion{
+    height: 60vh;
+    overflow-y: auto;
 
     &-page{
         margin: 0 24px;
+        
     }
 
-   
+   &-img{
+       width: 130px;
+       height: 130px;
+       border-radius: 50%;
+       margin: 10px;
+   }
+   &-dish{
+       text-align: center;
+       width: 220px;
+       height: 290px;
+       background: #1F1D2B;
+       border: 1px dashed #393C49;
+       border-radius: 8px;
+       margin: 15px 10px;
+    //    padding: 10px 0px 0px 0px;
+   }
+
+   &-btn{
+    background: #EA7C69;
+    // opacity: 0.24;
+    border-radius: 0px 0px 8px 8px;
+    height: 42px;
+    width: 222px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    color: white;
+   }
+
+    &-text{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 140%;
+        color: #ABBBC2;
+    }
+    &-name{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 130%;
+        // height: 0;
+        padding-bottom: 10px;
+    }
+
+    &-button{
+        width: 220px;
+        height: 290px;
+        border: 1px dashed #EA7C69;
+        background-color: #1F1D2B;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 140%;
+        color:#EA7C69;
+
+        span{
+            color: #EA7C69;
+            font-size: 28px;
+        }
+
+    }
+
+    &-box{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background:  #1F1D2B;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #EA7C69;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #d15c47;
+  }

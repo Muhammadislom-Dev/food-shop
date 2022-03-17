@@ -12,8 +12,10 @@
     img{
       border-radius: 50%;
       margin-top: -55px;
-      animation: rotation 10s linear infinite;
-      object-fit: cover;
+      animation-name: BoxAnimation;
+      animation-delay: 5s;
+      animation-duration: 18s;
+      animation-iteration-count: infinite;
     }
 
 
@@ -48,3 +50,12 @@
     background: #d15c47;
   }
 
+
+@keyframes BoxAnimation {
+   to{
+     transform: rotate(0deg);
+   }
+   from{
+     transform: rotate(-360deg);
+   }
+}

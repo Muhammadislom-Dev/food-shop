@@ -1,16 +1,10 @@
 import './Settings.scss'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
-const Settings = () =>{
+import Accordion from '../../Components/Accordion/Accordion'
+import { Switch, Route } from 'react-router-dom'
 
-    const handleAddClass = (evt) =>{
-        const links = document.querySelectorAll('.setting__linkactive');
-        links.forEach(link =>{
-         link.classList.remove('setting__linkactive')
-        })
-        evt.currentTarget.classList.add('setting__linkactive')
-      }
-    
+const Settings = () =>{  
 
     return(
         <div className="setting">
@@ -22,24 +16,30 @@ const Settings = () =>{
 
                 <ul className='setting-links'>
                    <li className='setting__item'>
-                       <Link onClick={handleAddClass} className='setting__link'    to="/order" >Hot Dishes</Link>
+                       <NavLink  className='setting__link' exact  to="/order/restaurant/" >Hot Dishes</NavLink>
                    </li>
                    <li className='setting__item'>
-                       <Link onClick={handleAddClass} className='setting__link'   to="order/restaurant/cold/">Cold Dishes</Link>
+                       <NavLink  className='setting__link' exact to="/order/restaurant/cold">Cold Dishes</NavLink>
                    </li>
                    <li className='setting__item'>
-                       <Link onClick={handleAddClass} className='setting__link'   to="/order/soup/">Soup</Link>
+                       <NavLink  className='setting__link'  to="/order/restaurant/soup">Soup</NavLink>
                    </li>
                    <li className='setting__item'>
-                       <Link onClick={handleAddClass} className='setting__link'   to="/order/grill/">Grill</Link>
+                       <NavLink  className='setting__link'  to="/order/restaurant/grill">Grill</NavLink>
                    </li>
                    <li className='setting__item'>
-                       <Link onClick={handleAddClass} className='setting__link'   to="/order/appetizer/">Appetizer</Link>
+                       <NavLink  className='setting__link'  to="/order/restaurant/appetizer">Appetizer</NavLink>
                    </li>
                    <li className='setting__item'>
-                       <Link onClick={handleAddClass} className='setting__link'   to="/order/dessert/">Dessert</Link>
+                       <NavLink  className='setting__link'  to="/order/restaurant/dessert">Dessert</NavLink>
                    </li>
                </ul>
+
+               <Switch>
+                   <Route>
+                       <Accordion />
+                   </Route>
+               </Switch>
             </div>
         </div>
     )
