@@ -1,0 +1,88 @@
+.setting{
+
+    &-page{
+        margin: 0px 20px;
+    }
+
+    &-box{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px 10px;
+    }
+
+    &-button{
+        background: #1F1D2B;
+        border: 1px solid #393C49;
+        box-sizing: border-box;
+        border-radius: 8px;
+        width: 165px;
+        height: 45px;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 130%;
+    }
+
+    &-button::before{
+        content: "";
+        display: inline-block;
+        background-image: url('../../assets/img/Option.png');
+        background-repeat: no-repeat;
+        background-size: 16px;
+        width: 16px;
+        height: 14px;
+        margin-right: 15px;
+        box-sizing: border-box;
+    }
+
+    &-links{
+        display: flex;
+        margin: 0;
+        padding: 0;
+        margin-left: 10px;
+        margin-right: 38px;
+        list-style: none;
+        border-bottom: 1px solid #393C49;
+    }
+
+    &__link{
+        position: relative;
+        z-index: 1;
+        padding-bottom: 13px;
+        display: inline-block;
+        margin-right: 32px;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 14px;
+        line-height:19px;
+        line-height: 140%;
+        transition: 0.3s;
+
+        &::before{
+            display: none;    
+            top: 96%;    
+            position: absolute;
+            z-index: 1;
+            content: "";
+            width: 50%;
+            height: 4px;
+            background-color: #EA7C69;
+            border-radius: 5px;
+        }
+
+        &:hover{
+            color: #EA7C69;
+    }
+   
+
+    &-linkactive{
+        color: #EA7C69;
+    
+        ::before{
+            display:block;
+        }
+    }
+}
+}

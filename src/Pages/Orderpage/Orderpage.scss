@@ -1,0 +1,27 @@
+.orderpage{
+    display: flex;
+    width: 100%;
+
+    &_left{
+        height: 650px;
+        width: 360px;
+        background: #1F1D2B;
+        border-radius: 8px;
+        margin-left: 15px;
+    }
+
+    &_right{
+        background: #1F1D2B;
+        border-radius: 8px;
+        height: 650px;
+        width: 1000px;
+        margin-left: 15px;
+    }
+}
+
+.settings{
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 140%;
+    margin-left: 15px;
+}

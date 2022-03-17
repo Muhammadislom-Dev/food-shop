@@ -4,6 +4,7 @@ import { Switch, Route } from 'react-router';
 //Pages
 import Home from './Pages/Home/Home';
 import Notification from './Pages/Notification/Notification';
+import Orderpage from './Pages/Orderpage/Orderpage';
 
 //Component
 import Sidebar from './Components/Sidebar/Sidebar';
@@ -23,11 +24,11 @@ function App() {
             <Route path="/graph"exact >
                /graph 
             </Route>
-            <Route path="/order"exact >
-               /order 
+            <Route path="/order">
+               <Orderpage />
             </Route>
             <Route path="/settings" exact >
-               /settings
+              /settings
             </Route>
             <Route path="/" >
                <Home />  

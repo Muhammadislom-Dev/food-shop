@@ -1,0 +1,42 @@
+.order{
+
+    &-name{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 130%;
+        height: 0;
+        color: #fff;
+    }
+    &-text{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 140%;
+        color: #ABBBC2;
+        padding-top: 8px;
+    }
+
+    &__link{
+        display: flex;
+        align-items: center;
+        padding: 10px 10px;
+    }
+
+    &-item{
+        padding: 10px;
+    }
+
+    &__link-active{
+        background-color:  rgba(234, 124, 105, 0.26);
+        display: flex;
+        width: 340px;
+        height: 80px;
+    }
+    &-list{
+        margin: 0;
+        padding: 0;
+    }
+
+    &-icon{
+        margin-left: 20px;
+    }
+}
