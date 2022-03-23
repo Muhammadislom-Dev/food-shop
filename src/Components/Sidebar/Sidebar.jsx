@@ -1,9 +1,18 @@
 import { Link} from 'react-router-dom'
 import './Sidebar.scss'
 import Logo from '../../assets/img/Logo.png'
-import Home from '../../assets/img/Home.png'
-import Dashboard from '../../assets/img/Dashboard.png'
-import Setting from '../../assets/img/Setting.png'
+// import Home from '../../assets/img/Home.png'
+// import Dashboard from '../../assets/img/Dashboard.png'
+// import Setting from '../../assets/img/Setting.png'
+
+import Home from '../Lib/Svgs/Home'
+import Discount from '../Lib/Svgs/Discount'
+import Graph from '../Lib/Svgs/Graph'
+import Message from '../Lib/Svgs/Message'
+import Notification from '../Lib/Svgs/Notification'
+import Settings from '../Lib/Svgs/Settings'
+
+
 
 const Sidebar =() =>{
 
@@ -22,42 +31,48 @@ const Sidebar =() =>{
                     <Link className='sidebar__link'
                      onClick={handleAddClass} to="/"> 
                         <span className='sidebar__link-item '>
-                        <img src={Home} alt="" className="sidebar__pic" /></span> 
+                          <Home />
+                        </span> 
                     </Link>
                  </li>
                  <li className='sidebar__item'>
                     <Link className='sidebar__link'  
                     onClick={handleAddClass}  to="/discount"  > 
                         <span className='sidebar__link-item '>
-                        <img src={Home} alt="" className="sidebar__pic" /></span> 
+                          <Discount />
+                        </span> 
                     </Link>
                  </li>
                  <li className='sidebar__item'>
                     <Link className='sidebar__link' 
                     onClick={handleAddClass} to="/notification" > 
                         <span className='sidebar__link-item'>
-                        <img src={Dashboard} alt="" className="sidebar__pic" /></span> 
+                         <Graph />
+                        </span> 
                     </Link>
                  </li>
                  <li className='sidebar__item'>
                     <Link  className='sidebar__link' 
                     onClick={handleAddClass} to="/graph"> 
                         <span className='sidebar__link-item'>
-                        <img src={Home} alt="" className="sidebar__pic" /></span> 
+                          <Message />
+                        </span> 
                     </Link >
                  </li>
                  <li className='sidebar__item'>
                     <Link className='sidebar__link' 
                     onClick={handleAddClass} to="/order" > 
                         <span className='sidebar__link-item'>
-                        <img src={Setting} alt="" className="sidebar__pic" /></span> 
+                          <Notification />
+                        </span> 
                     </Link>
                  </li>
                  <li className='sidebar__item'>
                     <Link className='sidebar__link' 
                     onClick={handleAddClass} to="/settings" > 
                         <span className='sidebar__link-item'>
-                        <img src={Home} alt="" className="sidebar__pic" /></span> 
+                          <Settings />
+                        </span> 
                     </Link>
                  </li>
              </ul>

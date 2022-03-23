@@ -30,6 +30,12 @@
            height: 56px;
            background-color: #EA7C69;
        }
+
+       svg{
+        path{
+          fill: #fff;
+        }
+      }
     }
 
     &__link{
@@ -40,14 +46,29 @@
        padding-right: 25px;
        border-radius: 12px 0px 0px 12px;
 
-       &-item{
-           display: flex;
-           align-items: center;
-           justify-content: center;
-           border-radius: 8px;
-           width: 56px;
-           height: 56px;
-       }
+       span{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 52px;
+        height: 52px;
+        border-radius: 8px;
+      }
+  
+      svg{
+        path{
+          fill: #EA7C69;
+        }
+      }
+
+    //    &-item{
+    //        display: flex;
+    //        align-items: center;
+    //        justify-content: center;
+    //        border-radius: 8px;
+    //        width: 56px;
+    //        height: 56px;
+    //    }
     }
 }
 
@@ -62,3 +83,11 @@
         opacity: 0.6;
     }
 }
+
+.sidebar__link svg path {
+    fill: #EA7C69;
+  }
+
+  .sidebar__link-active svg path {
+    fill: #fff;
+  }
