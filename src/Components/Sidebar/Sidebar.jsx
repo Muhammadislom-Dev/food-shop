@@ -2,6 +2,8 @@ import { Link} from 'react-router-dom'
 import './Sidebar.scss'
 import Logo from '../../assets/img/Logo.png'
 import Home from '../../assets/img/Home.png'
+import Dashboard from '../../assets/img/Dashboard.png'
+import Setting from '../../assets/img/Setting.png'
 
 const Sidebar =() =>{
 
@@ -34,7 +36,7 @@ const Sidebar =() =>{
                     <Link className='sidebar__link' 
                     onClick={handleAddClass} to="/notification" > 
                         <span className='sidebar__link-item'>
-                        <img src={Home} alt="" className="sidebar__pic" /></span> 
+                        <img src={Dashboard} alt="" className="sidebar__pic" /></span> 
                     </Link>
                  </li>
                  <li className='sidebar__item'>
@@ -48,7 +50,7 @@ const Sidebar =() =>{
                     <Link className='sidebar__link' 
                     onClick={handleAddClass} to="/order" > 
                         <span className='sidebar__link-item'>
-                        <img src={Home} alt="" className="sidebar__pic" /></span> 
+                        <img src={Setting} alt="" className="sidebar__pic" /></span> 
                     </Link>
                  </li>
                  <li className='sidebar__item'>
